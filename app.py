@@ -44,7 +44,8 @@ def main():
         tree = etree.parse(sheet, parser=parser)
         root = tree.getroot()
 
-        output = re.sub(b"(?s)<sheetProtection .*?/>",  b"", etree.tostring(root))
+        output = re.sub(b"(?s)<sheetProtection .*?/>",
+                        b"", etree.tostring(root))
 
         with open(sheet, 'wb') as f:
             f.write(output)
