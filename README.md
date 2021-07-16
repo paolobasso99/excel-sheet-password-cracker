@@ -1,4 +1,5 @@
 # Crack Excel sheet passwords
+Removes the passwords from a xlsm sheets.
 
 ## Steps
 1. Backup the file you want to crack
